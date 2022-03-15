@@ -1,11 +1,18 @@
 # MinStack
 Novel Custom MinStack Implementation at O(1) Time Complexity
 
-#MinStack Implementation with a Linked List Functionality
-
-- push(int elem) - O(1) Time Complexity
-
-First Header | Second Header
+Operation | Time Complexity
 ------------ | -------------
-Content from cell 1 | Content from cell 2
-Content in the first column | Content in the second column
+push(E elem) | O(1)
+pop() | O(1)
+peek() | O(1)
+isEmpty() | O(1)
+getMin() | O(1)
+
+#Why?
+***
+The getMin() operation of the stack will always be O(1) in all cases, both best or worst. The minimum value, even being popped, will always be retrieved in constant time, with no reinitialization of the most minimum value in the stack. This is done using an auxiliary helper structure, whose purpose is to always contain the minimum value of the stack at either its head or tail.
+
+#TODO
+***
+- Make MinStack Generic
