@@ -15,4 +15,4 @@ The getMin() operation of the stack will always be O(1) in all cases, both best 
 
 
 <h2>TODO</h2>
-- Make MinStack Generic
+ - Make MinStack Generic
